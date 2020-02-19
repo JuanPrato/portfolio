@@ -7,6 +7,48 @@
     --oscuro: #2c3e50;
 }
 
+.contenedor{
+    width: 95%;
+    margin: 0 auto;
+    max-width: 1500px;
+}
+
+@media (min-width: 768px) {
+    .contenedor{
+        width: 85%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .contenedor{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+/** Titulos y subtitulos **/
+
+.subtitulo{
+    text-transform: uppercase;
+    text-align: center;
+}
+/** Texto **/
+.textPimario{
+    color: var(--primario);
+}
+.textClaro{
+    color: var(--claro);
+}
+.textOscuro{
+    color: var(--oscuro);
+}
+.link{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
 /** Globales **/
 body{
     margin-top: 132px;
@@ -248,12 +290,84 @@ header .resto-header .img{
     display: inline;
 }
 
-/** CONOCEME **/
-
-.img .perfil{
-    border-radius: 50%;
+/** SECCIONES **/
+main section{
+    border-bottom: solid 1px var(--oscuro);
 }
 
+main section:last-of-type{
+    border: none;
+}
+
+/** CONOCEME **/
+.conoceme{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 600px) {
+    .conoceme .datos{
+        display: flex;
+        align-items: center;
+    }
+}
+
+.conoceme .img{
+    width: 25%;
+    margin: 2rem auto;
+    max-width: 150px;
+    min-width: 75px;
+}
+.conoceme .img .perfil{
+    border-radius: 50%;
+}
+.conoceme blockquote{
+    font-weight: 500;
+    text-align: center;
+}
+
+/** PROYECTOS **/
+
+.proyectos-populares{
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 768px) {
+    .proyectos-populares{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}
+.proyectos-populares .proyecto{
+    max-width: 300px;
+    border: solid 1px var(--oscuro);
+    padding: 1rem;
+    margin-bottom: .2rem;
+    border-radius: 5px;
+    flex-basis: calc(1fr - 1rem);
+}
+
+.proyecto .link{
+    display: inline-block;
+    padding: .5rem 0;
+    width: 100%;
+    text-align: center;
+}
+.proyecto .link:hover{
+    cursor: pointer;
+}
+
+.proyecto .tecnologias{
+    text-align: center;
+    list-style: none;
+    margin: 1rem 0 0 0;
+    padding: 0;
+}
+
+.proyecto .tecnologias li{
+    margin-bottom: .3rem;
+}
 
 /** UTILIDADES **/
 
