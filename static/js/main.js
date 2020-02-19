@@ -25,7 +25,7 @@ function toggleMenu(e) {
 
 function desplegar_tecnologias(e) {
     e.preventDefault();
-
+    console.log(e.target);
     let tecnologias = e.target.parentNode.children[3];
     console.log(tecnologias);
     tecnologias.show();
