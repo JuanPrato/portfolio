@@ -28,9 +28,5 @@ function desplegar_tecnologias(e) {
 
     let tecnologias = e.target.parentNode.children[3];
     console.log(tecnologias);
-    if(tecnologias.css('display') === 'none'){
-        tecnologias.show();
-    } else{
-        tecnologias.hide();
-    }
+    tecnologias.show();
 }
