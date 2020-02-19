@@ -1,0 +1,262 @@
+/** Generales **/
+:root{
+    --primario: #2ecc71;
+    --primarioOscuro: #27ae60;
+
+    --claro: #ecf0f1;
+    --oscuro: #2c3e50;
+}
+
+/** Globales **/
+body{
+    margin-top: 132px;
+    font-family: 'Muli', sans-serif;
+}
+
+img{
+    width: 100%;
+}
+
+header{
+    height: calc(100vh - 132px);
+    background-color: var(--oscuro);
+    display: flex;
+    flex-direction: column;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+/** INDEX **/
+
+/* header */
+header .barra-navegacion{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    width: calc(100% - 2rem);
+    background-color: var(--oscuro);
+    border: none;
+}
+
+.barra-navegacion .logo{
+    width: 150px;
+}
+
+.menu-puntos{
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 992px) {
+    .menu-puntos{
+        display: none;
+    }
+}
+.menu-puntos i{
+    padding: .2rem 1rem;
+    color: var(--claro);
+}
+nav{
+    display: none;
+    justify-content: space-evenly;
+    flex: 0 0 45%;
+    text-align: center;
+    position: absolute;
+    top: 132px;
+    left: 0;
+    width: 100%;
+    background-color: var(--oscuro);
+    flex-direction: column;
+}
+
+@media (min-width: 992px) {
+    nav{
+        display: flex!important;
+        align-items: center;
+        position: relative;
+        width: inherit;
+        background-color: transparent;
+        flex-direction: row;
+        top: 0;
+    }
+}
+
+nav .link{
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--claro);
+    transition: color .2s ease;
+    padding: .6rem 1rem;
+    border-bottom: solid 1px rgba(0, 0, 0, .2);
+}
+
+nav .link:hover{
+    color: var(--primarioOscuro);
+}
+
+nav .link:last-of-type{
+    border: none;
+}
+
+@media (min-width: 992px) {
+    nav .link{
+        font-size: 1.1rem;
+        font-weight: 500;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: var(--claro);
+        transition: color .2s ease;
+        border: none;
+    }
+}
+
+header .resto-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    flex: 1;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    header .resto-header{
+        flex-direction: row;
+    }
+}
+
+header .resto-header h1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0 0 1rem;
+    color: var(--primarioOscuro);
+    font-size: 3.2rem;
+}
+.resto-header h1 span{
+    display: block;
+    margin: 1rem 0 0 20%;
+    color: var(--primario);
+    font-size: 3.5rem;
+}
+@media (min-width: 480px) {
+    .resto-header h1 span{
+        margin: 1rem 0 0 20%;
+    }
+}
+
+@media (min-width: 1050px) {
+    .resto-header h1 span{
+        margin: 1rem 0 0 85%;
+    }
+}
+
+header .resto-header .img{
+    max-width: 500px;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+}
+
+@media (min-width: 768px) {
+    header .resto-header .img{
+        width: 30%;
+        margin: 0;
+        margin-right: 3rem;
+    }
+}
+
+/** FOOTER **/
+
+.footer{
+    height: 10rem;
+    padding-top: 1rem;
+    background-color: var(--oscuro);
+    color: var(--claro);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer .cosas-footer{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.nav-footer{
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .nav-footer{
+        display: flex;
+    }
+}
+
+.cosas-footer .datos-contacto{
+    flex: 0 0 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media (min-width: 992px) {
+    .cosas-footer .datos-contacto{
+        padding: 0 1rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .cosas-footer .datos-contacto{
+        flex: 0 0 45%;
+        align-items: initial;
+    }
+}
+
+.datos-contacto .dato{
+    display: flex;
+    align-items: center;
+    font-size: 1.05rem;
+}
+
+@media (min-width: 992px) {
+    .datos-contacto .dato{
+        margin: 1rem 0 0 2rem;
+    }
+}
+
+.datos-contacto .dato i{
+    margin-right: .5rem;
+}
+.footer .marca-registrada{
+    text-align: center;
+    background-color: rgba(0, 0, 0, .2);
+    padding: .7rem 0;
+}
+
+.footer .marca-registrada p{
+    display: inline;
+}
+
+/** CONOCEME **/
+
+.img .perfil{
+    border-radius: 50%;
+}
+
+
+/** UTILIDADES **/
+
+.hidden{
+    display: none;
+}
