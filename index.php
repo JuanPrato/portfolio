@@ -2,16 +2,6 @@
 include 'includes/templates/header.php';
 ?>
     <main>
-        <section class="conoceme contenedor">
-            <h2 class="subtitulo">Un poco sobre mi</h2>
-            <div class="datos">
-                <div class="img">
-                    <img src="static/img/perfil.png" alt="perfil" class="perfil">
-                </div>
-                <blockquote>Hola. Soy un desarrollador web junior, aun estoy aprendiendo y me encanta poder investigar y desarrollarme en nuevas tecnologias.
-                Y voy a dar lo mejor para poder superarme.</blockquote>
-            </div><!-- DATOS -->
-        </section>
         <section class="proyectos contenedor">
             <h2 class="subtitulo">Proyectos</h2>
             <div class="proyectos-populares">
@@ -44,7 +34,18 @@ include 'includes/templates/header.php';
                     </ul><!-- tecnologias -->
                 </div><!-- proyecto -->
             </div>
-        </section>
+        </section><!-- Proyectos -->
+
+        <section class="conoceme contenedor">
+            <h2 class="subtitulo">Un poco sobre mi</h2>
+            <div class="datos">
+                <div class="img">
+                    <img src="static/img/perfil.png" alt="perfil" class="perfil">
+                </div>
+                <blockquote>Hola. Soy un desarrollador web junior, aun estoy aprendiendo y me encanta poder investigar y desarrollarme en nuevas tecnologias.
+                Y voy a dar lo mejor para poder superarme.</blockquote>
+            </div><!-- DATOS -->
+        </section> <!-- CONOCEME -->
     </main>
 <?php
 include 'includes/templates/footer.php';

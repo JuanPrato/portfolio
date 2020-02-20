@@ -216,6 +216,15 @@ header .resto-header .img{
     }
 }
 
+.resto-header .enlace_proyecto{
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+.enlace_proyecto a{
+    display: block;
+}
 /** FOOTER **/
 
 .footer{
