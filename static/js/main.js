@@ -4,11 +4,6 @@ $(function(){
     const boton = $('#menu-puntos');
 
     boton.on('click', toggleMenu);
-
-    const menuTecnologias = $('.menu-tecnologias');
-
-    menuTecnologias.on('click', desplegar_tecnologias);
-
 });
 
 function toggleMenu(e) {
