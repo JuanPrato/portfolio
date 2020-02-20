@@ -60,7 +60,7 @@ img{
 }
 
 header{
-    height: calc(100vh - 132px);
+    height: calc(100vh - 100px);
     background-color: var(--oscuro);
     display: flex;
     flex-direction: column;
@@ -78,7 +78,7 @@ header .barra-navegacion{
     padding: 1rem;
     display: flex;
     justify-content: space-between;
-    height: 100px;
+    height: calc(100px - 2rem);
     position: fixed;
     top: 0;
     width: calc(100% - 2rem);
