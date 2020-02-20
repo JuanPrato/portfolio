@@ -345,7 +345,19 @@ main section:last-of-type{
     padding: 1rem;
     margin-bottom: .2rem;
     border-radius: 5px;
-    flex-basis: calc(1fr - 1rem);
+    flex-basis: calc(33% - 1rem);
+    transition: transform .5s ease;
+    background-color: var(--claro);
+}
+@media(min-width: 992px) {
+    .proyectos-populares .proyecto{
+        max-width: 450px;
+    }
+}
+
+.proyectos-populares .proyecto:hover{
+    transform: scale(1.1);
+    z-index: 1;
 }
 
 .proyecto .link{
@@ -363,6 +375,8 @@ main section:last-of-type{
     list-style: none;
     margin: 1rem 0 0 0;
     padding: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .proyecto .tecnologias li{

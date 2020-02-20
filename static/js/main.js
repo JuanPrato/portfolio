@@ -9,9 +9,6 @@ $(function(){
 
     menuTecnologias.on('click', desplegar_tecnologias);
 
-    let tecnologias = $('.tecnologias');
-    tecnologias.hide();
-    tecnologias.removeClass('hidden');
 });
 
 function toggleMenu(e) {
@@ -21,12 +18,4 @@ function toggleMenu(e) {
 
     menu.slideToggle();
     menu.css('display','flex');
-}
-
-function desplegar_tecnologias(e) {
-    e.preventDefault();
-    console.log(e.target);
-    let tecnologias = e.target.parentNode.children[3];
-    console.log(tecnologias);
-    tecnologias.show();
 }

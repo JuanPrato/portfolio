@@ -18,16 +18,16 @@ include 'includes/templates/header.php';
                 <div class="proyecto contenedor">
                     <img src="static/img/empty.svg" alt="imagen proyecto">
                     <a href="" class="link textOscuro">Ver mas</a>
-                    <a href="#" class="link textOscuro menu-tecnologias 1">Tecnologias utilizadas <i class="fas fa-caret-down"></i></a>
-                    <ul class="tecnologias hidden 1">
+                    <a href="#" class="link textOscuro menu-tecnologias">Tecnologias utilizadas:</a>
+                    <ul class="tecnologias">
 
                     </ul><!-- tecnologias -->
                 </div><!-- proyecto -->
                 <div class="proyecto contenedor">
                     <img src="static/img/empty.svg" alt="imagen proyecto">
                     <a href="https://tienda-virtual-v2.herokuapp.com/" class="link textOscuro" target="_blank">Tienda virtual</a>
-                    <a href="#" class="link textOscuro menu-tecnologias 2">Tecnologias utilizadas <i class="fas fa-caret-down"></i></a>
-                    <ul class="tecnologias hidden 2">
+                    <a href="#" class="link textOscuro menu-tecnologias">Tecnologias utilizadas:</a>
+                    <ul class="tecnologias">
                         <li>HTML</li>
                         <li>CSS</li>
                         <li>JQUERY</li>
@@ -38,8 +38,8 @@ include 'includes/templates/header.php';
                 <div class="proyecto contenedor">
                     <img src="static/img/empty.svg" alt="imagen proyecto">
                     <a href="" class="link textOscuro">Ver mas</a>
-                    <a href="#" class="link textOscuro menu-tecnologias 3">Tecnologias utilizadas <i class="fas fa-caret-down"></i></a>
-                    <ul class="tecnologias hidden 3">
+                    <a href="#" class="link textOscuro menu-tecnologias">Tecnologias utilizadas:</a>
+                    <ul class="tecnologias">
 
                     </ul><!-- tecnologias -->
                 </div><!-- proyecto -->
