@@ -167,6 +167,7 @@ header .resto-header{
     padding: 1rem 3rem;
     flex: 1;
     flex-direction: column;
+    position: relative;
 }
 
 @media (min-width: 768px) {
@@ -217,9 +218,10 @@ header .resto-header .img{
 }
 
 .resto-header .enlace_proyecto{
-    margin: 0 auto;
-    display: block;
     text-align: center;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
 }
 
 .enlace_proyecto a{
