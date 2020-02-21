@@ -2,7 +2,7 @@
 include 'includes/templates/header.php';
 ?>
     <main>
-        <section class="proyectos contenedor">
+        <section class="proyectos contenedor" id="proyectos">
             <h2 class="subtitulo">Proyectos</h2>
             <div class="proyectos-populares">
                 <div class="proyecto contenedor">

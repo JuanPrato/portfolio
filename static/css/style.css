@@ -51,12 +51,13 @@
 
 /** Globales **/
 body{
-    margin-top: 132px;
+    margin-top: 100px;
     font-family: 'Muli', sans-serif;
 }
 
 img{
     width: 100%;
+    height: 100%;
 }
 
 header{
@@ -84,10 +85,13 @@ header .barra-navegacion{
     width: calc(100% - 2rem);
     background-color: var(--oscuro);
     border: none;
+    z-index: 1;
+    align-items: center;
 }
 
 .barra-navegacion .logo{
-    width: 150px;
+    height: 80px;
+    width: 170px;
 }
 
 .menu-puntos{
@@ -207,6 +211,13 @@ header .resto-header .img{
     margin: 0 auto;
     align-items: center;
     display: flex;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    .resto-header .img{
+        margin-bottom: 0;
+    }
 }
 
 @media (min-width: 768px) {
@@ -217,15 +228,27 @@ header .resto-header .img{
     }
 }
 
-.resto-header .enlace_proyecto{
+.resto-header .enlace_proyectos{
     text-align: center;
     position: absolute;
     bottom: 0;
-    right: 50%;
+    left: 0;
+    width: 100%;
+    color: var(--claro);
 }
 
-.enlace_proyecto a{
+@media (min-width: 768px) {
+    .resto-header .enlace_proyectos{
+        right: calc( 50% - 150px );
+        max-width: 350px;
+        left: unset;
+    }
+}
+
+.enlace_proyectos a{
     display: block;
+    text-decoration: none;
+    color: var(--claro);
 }
 /** FOOTER **/
 
@@ -329,6 +352,7 @@ main section:last-of-type{
     max-width: 150px;
     min-width: 75px;
 }
+
 .conoceme .img .perfil{
     border-radius: 50%;
 }

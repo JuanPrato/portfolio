@@ -32,7 +32,7 @@
             <div class="img">
                 <img src="static/img/coding.svg" alt="coding-img">
             </div><!-- img -->
-            <div class="enlace_proyectos">
+            <div class="enlace_proyectos link">
                 <a href="#proyectos">mira mis proyectos abajo</a>
                 <i class="fas fa-caret-down"></i>
             </div>
