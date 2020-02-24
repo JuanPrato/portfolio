@@ -28,10 +28,16 @@
 }
 
 /** Titulos y subtitulos **/
+.titulo{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.5rem;
+}
 
 .subtitulo{
     text-transform: uppercase;
     text-align: center;
+    font-size: 2rem;
 }
 /** Texto **/
 .textPimario{
