@@ -14,7 +14,7 @@ include 'includes/templates/header.php';
                     </ul><!-- tecnologias -->
                 </div><!-- proyecto -->
                 <div class="proyecto contenedor">
-                    <img src="static/img/empty.svg" alt="imagen proyecto">
+                    <img src="static/img/tienda.png" alt="imagen proyecto">
                     <a href="https://tienda-virtual-v2.herokuapp.com/" class="link textOscuro" target="_blank">Tienda virtual</a>
                     <a href="#" class="link textOscuro menu-tecnologias">Tecnologias utilizadas:</a>
                     <ul class="tecnologias">
