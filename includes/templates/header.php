@@ -14,7 +14,7 @@
         <div class="barra-navegacion">
             <div class="logo">
                 <a href="#header">
-                    <img src="static/img/logo.svg" alt="logo" width="150px">
+                    <h2>Mi Portfolio</h2>
                 </a>
             </div><!--Logo-->
             <div class="menu-puntos">
