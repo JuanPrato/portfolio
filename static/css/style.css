@@ -390,6 +390,7 @@ main section:last-of-type{
     background-color: var(--claro);
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
 }
 @media(min-width: 992px) {
     .proyectos-populares .proyecto{
@@ -403,11 +404,16 @@ main section:last-of-type{
 }
 
 .proyecto .informacion-proyecto{
-    flex: 1 0 50%;
+    flex: 0 0 30%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: .5rem .3rem;
+}
+
+.informacion-proyecto .enlace-proyecto{
+    margin: .3rem;
+    border-bottom: 1px solid var(--oscuro);
 }
 
 .proyecto .link{

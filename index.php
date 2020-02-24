@@ -8,7 +8,7 @@ include 'includes/templates/header.php';
                 <div class="proyecto contenedor">
                     <img src="static/img/empty.svg" alt="imagen proyecto">
                     <div class="informacion-proyecto">
-                        <a href="" class="link textOscuro">Ver mas</a>
+                        <a href="" class="link textOscuro enlace-proyecto">Ver mas</a>
                         <a href="#" class="link textOscuro menu-tecnologias">Tecnologias utilizadas:</a>
                         <ul class="tecnologias">
 
@@ -18,7 +18,7 @@ include 'includes/templates/header.php';
                 <div class="proyecto contenedor">
                     <img src="static/img/tienda.png" alt="imagen proyecto">
                     <div class="informacion-proyecto">
-                        <a href="https://tienda-virtual-v2.herokuapp.com/" class="link textOscuro" target="_blank">Tienda virtual</a>
+                        <a href="https://tienda-virtual-v2.herokuapp.com/" class="link textOscuro enlace-proyecto" target="_blank">Tienda virtual</a>
                         <a href="#" class="link textOscuro menu-tecnologias">Tecnologias utilizadas:</a>
                         <ul class="tecnologias">
                             <li>HTML</li>
@@ -32,7 +32,7 @@ include 'includes/templates/header.php';
                 <div class="proyecto contenedor">
                     <img src="static/img/empty.svg" alt="imagen proyecto">
                     <div class="informacion-proyecto">
-                        <a href="" class="link textOscuro">Ver mas</a>
+                        <a href="" class="link textOscuro enlace-proyecto">Ver mas</a>
                         <a href="#" class="link textOscuro menu-tecnologias">Tecnologias utilizadas:</a>
                         <ul class="tecnologias">
 
