@@ -13,7 +13,7 @@
     <header id="header">
         <div class="barra-navegacion">
             <div class="logo">
-                <a href="#header">
+                <a href="#header" class="link">
                     <h2>Mi Portfolio</h2>
                 </a>
             </div><!--Logo-->
