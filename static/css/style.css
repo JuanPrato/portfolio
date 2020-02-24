@@ -331,13 +331,13 @@ header .resto-header .img{
 
 /** SECCIONES **/
 main section{
-    margin-bottom: 1rem!important;
+    padding-bottom: 1rem!important;
     border-bottom: solid 1px var(--oscuro);
 }
 
 main section:last-of-type{
     border: none;
-    margin-bottom: 0!important;
+    padding-bottom: 0!important;
 }
 
 /** CONOCEME **/
