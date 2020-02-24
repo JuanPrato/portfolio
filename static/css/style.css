@@ -90,7 +90,11 @@ header .barra-navegacion{
 
 .barra-navegacion .logo{
     height: 80px;
-    width: 110px;
+    color: white;
+    font-family: 'Muli', sans-serif;
+}
+
+.logo .link h2{
     color: white;
     font-family: 'Muli', sans-serif;
 }
