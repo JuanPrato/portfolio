@@ -54,7 +54,21 @@ include 'includes/templates/header.php';
         </section> <!-- CONOCEME -->
 
         <section class="contactame contenedor">
-            <form action=""></form>
+            <form>
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" class="input">
+                </div>
+                <div class="campo">
+                    <label for="nombre">Telefono:</label>
+                    <input type="number" class="input">
+                </div>
+                <div class="campo">
+                    <label for="nombre">Email:</label>
+                    <input type="email" class="input">
+                </div>
+                <input type="submit" value="Enviar" class="btn btn_primary">
+            </form>
         </section><!-- CONTACTAME -->
     </main>
 <?php

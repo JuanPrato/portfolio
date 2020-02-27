@@ -54,7 +54,10 @@
     text-transform: uppercase;
     font-weight: 500;
 }
-
+p{
+    margin: 0;
+    padding: 0;
+}
 /** Globales **/
 body{
     margin-top: 100px;
@@ -72,9 +75,21 @@ header{
     flex-direction: column;
 }
 
-p{
-    margin: 0;
-    padding: 0;
+.btn{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: .3rem 1rem;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .btn{
+        display: inline-block;
+    }
+}
+
+.btn_primary{
+    background-color: var(--primario);
 }
 
 /** INDEX **/
@@ -445,6 +460,17 @@ main section:last-of-type{
 
 .proyecto .tecnologias li{
     margin-bottom: .3rem;
+}
+
+/** CONTACTO **/
+.contactame .campo{
+    width: 100%;
+    display: inline-block;
+}
+
+.contactame .campo .input{
+    width: 100%;
+    padding: .5rem 1rem;
 }
 
 /** UTILIDADES **/
