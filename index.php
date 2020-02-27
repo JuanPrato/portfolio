@@ -52,6 +52,10 @@ include 'includes/templates/header.php';
                 Y voy a dar lo mejor para poder superarme.</blockquote>
             </div><!-- DATOS -->
         </section> <!-- CONOCEME -->
+
+        <section class="contactame contenedor">
+            <form action=""></form>
+        </section><!-- CONTACTAME -->
     </main>
 <?php
 include 'includes/templates/footer.php';
