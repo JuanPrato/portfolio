@@ -54,21 +54,38 @@ include 'includes/templates/header.php';
         </section> <!-- CONOCEME -->
 
         <section class="contactame contenedor">
-            <form>
-                <div class="campo">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" class="input">
-                </div>
-                <div class="campo">
-                    <label for="nombre">Telefono:</label>
-                    <input type="number" class="input">
-                </div>
-                <div class="campo">
-                    <label for="nombre">Email:</label>
-                    <input type="email" class="input">
-                </div>
-                <input type="submit" value="Enviar" class="btn btn_primary">
-            </form>
+            <h2 class="subtitulo">Podes contactarme mediante:</h2>
+            <div class="formas_contacto">
+                <form action="includes/templates/enviar_correo.php" method="POST">
+                    <div class="campo">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" class="input" id="nombre" name="nombre">
+                    </div>
+                    <div class="campo">
+                        <label for="numero">Telefono:</label>
+                        <input type="number" class="input" id="numero" name="numero">
+                    </div>
+                    <div class="campo">
+                        <label for="email">Email:</label>
+                        <input type="email" class="input" id="email" name="email">
+                    </div>
+                    <div class="campo">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                    </div>
+                    <input type="submit" value="Enviar" class="btn btn_primary" id="enviar_correo">
+                </form>
+                <div class="datos-contacto">
+                    <div class="dato">
+                        <i class="fas fa-phone"></i>
+                        <p>+54 1168772521</p>
+                    </div>
+                    <div class="dato">
+                        <i class="fas fa-envelope"></i>
+                        <p>pratojuanmanuel2@gmail.com</p>
+                    </div>
+                </div><!-- datos-contacto -->
+            </div>
         </section><!-- CONTACTAME -->
     </main>
 <?php
