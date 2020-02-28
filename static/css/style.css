@@ -9,6 +9,12 @@
     --danger: #e74c3c;
 }
 
+html {
+    box-sizing: border-box;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
 .contenedor{
     width: 95%;
     margin: 0 auto;
