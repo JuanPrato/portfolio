@@ -20,7 +20,7 @@ function toggleMenu(e) {
 function enviarCorreo(e) {
     e.preventDefault();
 
-    const nombre = $('#nombre')[0].value; 
+    const nombre = $('#nombre')[0].value;
     const email = $('#email')[0].value;
     const numero = $('#numero')[0].value;
     const mensaje = $('#mensaje')[0].value;
