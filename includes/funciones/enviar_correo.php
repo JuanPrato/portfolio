@@ -1,12 +1,13 @@
 <?php
 require_once '../../phpmailer/PHPMailerAutoload.php';
+require_once '../../phpmailer/class.phpmailer.php';
 
 $mail_usuario = $POST['email'];
 $nombre_usuario = $POST['nombre'];
 $celular_usuario = $POST['numero'];
 $mensaje_usuario = $POST['mensaje'];
 
-$mail = new PHPMailer;
+$mail = new PHPMailer();
 $mail->isSMTP();
 $mail->Host='smtp.gmail.com';
 $mail->Port=587;
