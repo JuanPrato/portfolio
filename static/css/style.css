@@ -293,6 +293,7 @@ header .resto-header .img{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 1rem;
 }
 
 .footer .cosas-footer{
@@ -474,19 +475,24 @@ main section:last-of-type{
 
 .contactame .formas_contacto{
     display: flex;
+    justify-content: space-between;
 }
 .contactame .formas_contacto .formulario{
-    flex: 1 0 45%;
+    flex-basis: 45%;
     margin: 0 auto;
+    border-right: 1px solid var(--oscuro);
 }
-
+.formas_contacto .datos-contacto{
+    flex-basis: 45%;
+}
 .contactame .campo{
     width: 100%;
     display: inline-block;
 }
 .contactame .campo label{
     font-family: 'Roboto';
-    font-size: 1rem;
+    font-size: 1.4rem;
+    font-weight: 500;
 }
 
 .contactame .campo .input{
@@ -495,7 +501,8 @@ main section:last-of-type{
 }
 
 .campo .textarea{
-    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
     min-height: 5rem;
     max-height: 8rem;
 }
