@@ -1,5 +1,5 @@
 <?php
-require_once 'phpmailer/PHPMailerAutoload.php';
+require_once '../../phpmailer/PHPMailerAutoload.php';
 
 $mail_usuario = $POST['email'];
 $nombre_usuario = $POST['nombre'];
