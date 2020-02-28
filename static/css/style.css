@@ -470,6 +470,16 @@ main section:last-of-type{
 }
 
 /** CONTACTO **/
+
+
+.contactame .formas_contacto{
+    display: flex;
+}
+.contactame .formas_contacto .formulario{
+    flex: 1 0 45%;
+    margin: 0 auto;
+}
+
 .contactame .campo{
     width: 100%;
     display: inline-block;
