@@ -493,7 +493,15 @@ main section:last-of-type{
 .contactame .formas_contacto .formulario{
     flex-basis: 45%;
     margin: 0 auto;
-    border-right: 1px solid var(--oscuro);
+    border: none;
+    border-bottom: 1px solid var(--oscuro);
+}
+
+@media (min-width: 768px) {
+    .contactame .formas_contacto .formulario{
+        border: none;
+        border-right: 1px solid var(--oscuro);
+    }
 }
 .formas_contacto .datos-contacto{
     flex-basis: 45%;
