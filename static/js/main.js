@@ -5,12 +5,11 @@ $(function(){
 
     boton.on('click', toggleMenu);
 
-    enviar_correo = $('#enviar_correo');
+    const enviar_correo = $('#enviar_correo');
     enviar_correo.on('click', enviarCorreo);
 });
 
 function toggleMenu(e) {
-    console.log(e.target);
 
     let menu = $('#nav-header');
 

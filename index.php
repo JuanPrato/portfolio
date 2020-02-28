@@ -63,7 +63,7 @@ include 'includes/templates/header.php';
                     </div>
                     <div class="campo">
                         <label for="numero">Telefono:</label>
-                        <input type="number" class="input" id="numero" name="numero">
+                        <input type="number" class="input" id="numero" name="numero" min="0">
                     </div>
                     <div class="campo">
                         <label for="email">Email:</label>
@@ -71,7 +71,7 @@ include 'includes/templates/header.php';
                     </div>
                     <div class="campo">
                         <label for="mensaje">Mensaje:</label>
-                        <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="textarea"></textarea>
                     </div>
                     <input type="submit" value="Enviar" class="btn btn_primary" id="enviar_correo">
                 </form>

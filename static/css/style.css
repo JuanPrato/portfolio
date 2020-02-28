@@ -484,6 +484,11 @@ main section:last-of-type{
     padding: .5rem 1rem;
 }
 
+.campo .textarea{
+    width: 100%;
+    min-height: 5rem;
+}
+
 /** UTILIDADES **/
 
 .hidden{
