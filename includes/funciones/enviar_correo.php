@@ -7,7 +7,7 @@ $celular_usuario = $POST['numero'];
 $mensaje_usuario = $POST['mensaje'];
 
 $mail = new PHPMailer;
-
+$mail->isSMTP();
 $mail->Host='smtp.gmail.com';
 $mail->Port=587;
 $mail->SMTPAuth=true;
