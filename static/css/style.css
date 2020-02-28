@@ -116,6 +116,7 @@ header .barra-navegacion{
     height: 100px;
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     background-color: var(--oscuro);
     border: none;
@@ -155,7 +156,7 @@ nav{
     flex: 0 0 45%;
     text-align: center;
     position: absolute;
-    top: 100px;
+    top: 99px;
     left: 0;
     width: 100%;
     background-color: var(--oscuro);
@@ -344,6 +345,7 @@ header .resto-header .img{
     display: flex;
     align-items: center;
     font-size: 1.05rem;
+    margin-top: 1rem;
 }
 
 @media (min-width: 992px) {
@@ -513,11 +515,12 @@ main section:last-of-type{
 .contactame .campo{
     width: 100%;
     display: inline-block;
+    margin: .7rem 0;
 }
 .contactame .campo label{
     font-size: 1.4rem;
     font-weight: 500;
-    margin: .3rem 0 .1rem 0;
+    margin: .7rem 0 .3rem 0;
 }
 
 .contactame .campo .input{

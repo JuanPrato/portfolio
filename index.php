@@ -42,7 +42,7 @@ include 'includes/templates/header.php';
             </div>
         </section><!-- Proyectos -->
 
-        <section class="conoceme contenedor">
+        <section class="conoceme contenedor" id="conoceme">
             <h2 class="subtitulo">Un poco sobre mi</h2>
             <div class="datos">
                 <div class="img">
@@ -53,7 +53,7 @@ include 'includes/templates/header.php';
             </div><!-- DATOS -->
         </section> <!-- CONOCEME -->
 
-        <section class="contactame contenedor">
+        <section class="contactame contenedor" id="contactame">
             <h2 class="subtitulo">Podes contactarme mediante:</h2>
             <div class="formas_contacto">
                 <form class="formulario contenedor">

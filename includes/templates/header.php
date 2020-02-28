@@ -11,20 +11,21 @@
 </head>
 <body>
     <header id="header">
+        <div id="inicio"></div>
         <div class="barra-navegacion">
             <div class="logo">
                 <a href="#header" class="link">
-                    <h2>Mi Portfolio</h2>
+                    <h2>JP</h2>
                 </a>
             </div><!--Logo-->
             <div class="menu-puntos">
                 <i class="fas fa-ellipsis-v" id="menu-puntos"></i>
             </div>  
             <nav id="nav-header">
-                <a href="#header" class="link">Inicio</a>
-                <a href="#Conoceme" class="link">Conoceme</a>
-                <a href="#Proyectos" class="link">Proyectos</a>
-                <a href="#Contactame" class="link">Contactame</a>
+                <a href="#header" class="link nav_link" id="link_inicio">Inicio</a>
+                <a href="#Conoceme" class="link nav_link" id="link_conoceme">Conoceme</a>
+                <a href="#Proyectos" class="link nav_link" id="link_proyectos">Proyectos</a>
+                <a href="#Contactame" class="link nav_link" id="link_contactame">Contactame</a>
             </nav>
         </div><!-- Barra-navegacion -->
         <div class="resto-header">

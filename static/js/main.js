@@ -7,6 +7,12 @@ $(function(){
 
     const enviar_correo = $('#enviar_correo');
     enviar_correo.on('click', enviarCorreo);
+
+    /** SCROLL **/
+
+    const links = $('nav');
+    links.on('click', scrollTo);
+
 });
 
 function toggleMenu(e) {
@@ -45,4 +51,18 @@ function enviarCorreo(e) {
         .always(function(data) {
             console.log('completado');
         });
+}
+
+function scrollTo(e) {
+    e.preventDefault();
+    let seccion = e.target.id;
+    console.log(seccion);
+    console.log(e.target);
+    seccion = seccion.split('_');
+    seccion = seccion[1];
+    console.log(seccion);
+
+    $('html, body').animate({
+        scrollTop: $("#" + seccion).offset().top - 100
+    }, 1000);
 }
