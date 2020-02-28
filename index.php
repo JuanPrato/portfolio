@@ -56,7 +56,7 @@ include 'includes/templates/header.php';
         <section class="contactame contenedor">
             <h2 class="subtitulo">Podes contactarme mediante:</h2>
             <div class="formas_contacto">
-                <form action="includes/templates/enviar_correo.php" method="POST">
+                <form>
                     <div class="campo">
                         <label for="nombre">Nombre:</label>
                         <input type="text" class="input" id="nombre" name="nombre">
