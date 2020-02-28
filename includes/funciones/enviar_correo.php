@@ -17,7 +17,7 @@ $mail->Username='portfoliojuanprato@gmail.com';
 $mail->Password='portfolio123';
 
 $mail->setFrom( $mail_usuario , $nombre_usuario );
-$mail->addAddress('pratojuanmanuel2@gmail.com');
+$mail->addAddress('portfoliojuanprato@gmail.com');
 $mail->addReplyTo('pratojuanmanuel2@gmail.com');
 
 $mail->isHTML(false);
