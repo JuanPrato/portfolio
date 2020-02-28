@@ -18,12 +18,12 @@ $mail->Username='portfoliojuanprato@gmail.com';
 $mail->Password='portfolio123';
 
 $mail->setFrom( 'portfoliojuanprato@gmail.com', 'Portfolio' );
-$mail->addAddress('pratojuanmanuel2@gmail.com');
+$mail->addAddress('pratojuanmanuel2@gmail.com', 'Juan Manuel');
 $mail->addReplyTo('pratojuanmanuel2@gmail.com', 'mi Mail');
 
-$mail->isHTML(false);
-$mail->Subject='PHP Mailer Subject';
-$mail->Body= 'Nombre:' . $nombre_usuario . 'Mail:' . $mail_usuario . 'Celular: ' $celular_usuario . 'Mensaje:' . $mensaje_usuario;
+$mail->isHTML(true);
+$mail->Subject='Mensaje del Portfolio';
+$mail->AltBody= 'Nombre:' . $nombre_usuario . 'Mail:' . $mail_usuario . 'Celular: ' $celular_usuario . 'Mensaje:' . $mensaje_usuario;
 
 if(!$mail->send()){
     $respuesta = array(

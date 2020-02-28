@@ -495,12 +495,14 @@ main section:last-of-type{
     margin: 0 auto;
     border: none;
     border-bottom: 1px solid var(--oscuro);
+    padding-bottom: 1rem;
 }
 
 @media (min-width: 768px) {
     .contactame .formas_contacto .formulario{
         border: none;
         border-right: 1px solid var(--oscuro);
+        padding-bottom: 0;
     }
 }
 .formas_contacto .datos-contacto{
@@ -526,6 +528,7 @@ main section:last-of-type{
     min-width: 100%;
     min-height: 5rem;
     max-height: 8rem;
+    padding: .3rem 1rem;
 }
 
 /** UTILIDADES **/
