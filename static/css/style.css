@@ -482,7 +482,14 @@ main section:last-of-type{
 .contactame .formas_contacto{
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
 }
+@media (min-width: 768px) {
+    .contactame .formas_contacto{
+        flex-direction: row;
+    }
+}
+
 .contactame .formas_contacto .formulario{
     flex-basis: 45%;
     margin: 0 auto;
