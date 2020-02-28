@@ -1,39 +1,49 @@
 <?php
-require_once '../../phpmailer/PHPMailerAutoload.php';
-require_once '../../phpmailer/class.phpmailer.php';
 
-$mail_usuario = $POST['email'];
-$nombre_usuario = $POST['nombre'];
-$celular_usuario = $POST['numero'];
-$mensaje_usuario = $POST['mensaje'];
+try {
 
-$mail = new PHPMailer();
-$mail->isSMTP();
-$mail->Host='smtp.gmail.com';
-$mail->Port=587;
-$mail->SMTPAuth=true;
-$mail->SMTPSecure='tls';
+    require_once '../../phpmailer/PHPMailerAutoload.php';
+    require_once '../../phpmailer/class.phpmailer.php';
 
-$mail->Username='portfoliojuanprato@gmail.com';
-$mail->Password='portfolio123';
+    $mail_usuario = $_POST['email'];
+    $nombre_usuario = $_POST['nombre'];
+    $celular_usuario = $_POST['numero'];
+    $mensaje_usuario = $_POST['mensaje'];
 
-$mail->setFrom( 'portfoliojuanprato@gmail.com', 'Portfolio' );
-$mail->addAddress('pratojuanmanuel2@gmail.com', 'Juan Manuel');
-$mail->addReplyTo('pratojuanmanuel2@gmail.com', 'mi Mail');
+    $mail = new PHPMailer();
+    $mail->isSMTP();
+    $mail->Host='smtp.gmail.com';
+    $mail->Port=587;
+    $mail->SMTPAuth=true;
+    $mail->SMTPSecure='tls';
 
-$mail->isHTML(true);
-$mail->Subject='Mensaje del Portfolio';
-$mail->AltBody= 'Nombre:' . $nombre_usuario . 'Mail:' . $mail_usuario . 'Celular: ' $celular_usuario . 'Mensaje:' . $mensaje_usuario;
+    $mail->Username='portfoliojuanprato@gmail.com';
+    $mail->Password='portfolio123';
 
-if(!$mail->send()){
+    $mail->setFrom( 'portfoliojuanprato@gmail.com', 'Portfolio' );
+    $mail->addAddress('pratojuanmanuel2@gmail.com', 'Juan Manuel');
+    $mail->addReplyTo('pratojuanmanuel2@gmail.com', 'mi Mail');
+
+    $mail->isHTML(true);
+    $mail->Subject='Mensaje del Portfolio';
+    $mail->AltBody= 'Nombre:' . $nombre_usuario . 'Mail:' . $mail_usuario . 'Celular: ' . $celular_usuario . 'Mensaje:' . $mensaje_usuario;
+
+    if(!$mail->send()){
+        $respuesta = array(
+            'respuesta' => 'error',
+            'post' => $_POST['email']
+        );
+    } else {
+        $respuesta = array(
+            'respuesta' => 'exito'
+        );
+    }
+} catch (Exeption $e) {
     $respuesta = array(
-        'respuesta' => 'error'
-    );
-} else {
-    $respuesta = array(
-        'respuesta' => 'exito'
+        'error' => $e->getMessage()
     );
 }
+
 
 echo json_encode($respuesta);
 

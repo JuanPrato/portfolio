@@ -20,14 +20,14 @@ function toggleMenu(e) {
 function enviarCorreo(e) {
     e.preventDefault();
 
-    const nombre = $('#nombre').value; 
-    const email = $('#nombre').value;
-    const numero = $('#numero').value;
-    const mensaje = $('#mensaje').value;
+    const nombre = $('#nombre')[0].value; 
+    const email = $('#nombre')[0].value;
+    const numero = $('#numero')[0].value;
+    const mensaje = $('#mensaje')[0].value;
 
     $.ajax(
         {
-            url : '../../includes/funciones/enviar_correo.php',
+            url : window.location.href + '/includes/funciones/enviar_correo.php',
             type: "POST",
             data : {
                 'nombre' : nombre,
