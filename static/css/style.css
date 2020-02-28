@@ -86,14 +86,15 @@ header{
 .btn{
     text-decoration: none;
     text-transform: uppercase;
-    padding: .3rem 1rem;
-    display: block;
+    padding: .6rem 1rem;
+    display: inline-block;
     border: none;
+    width: 100%;
 }
 
 @media (min-width: 768px) {
     .btn{
-        display: inline-block;
+        width: auto;
     }
 }
 
@@ -503,6 +504,7 @@ main section:last-of-type{
         border: none;
         border-right: 1px solid var(--oscuro);
         padding-bottom: 0;
+        padding-right: 1rem;
     }
 }
 .formas_contacto .datos-contacto{
@@ -513,9 +515,9 @@ main section:last-of-type{
     display: inline-block;
 }
 .contactame .campo label{
-    font-family: 'Roboto';
     font-size: 1.4rem;
     font-weight: 500;
+    margin: .3rem 0 .1rem 0;
 }
 
 .contactame .campo .input{
