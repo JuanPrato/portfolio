@@ -57,6 +57,7 @@ include 'includes/templates/header.php';
             <h2 class="subtitulo">Podes contactarme mediante:</h2>
             <div class="formas_contacto">
                 <form>
+                    <h3>Enviame un correo:</h3>
                     <div class="campo">
                         <label for="nombre">Nombre:</label>
                         <input type="text" class="input" id="nombre" name="nombre">
@@ -71,11 +72,12 @@ include 'includes/templates/header.php';
                     </div>
                     <div class="campo">
                         <label for="mensaje">Mensaje:</label>
-                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="textarea"></textarea>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="textarea" maxlength="160"></textarea>
                     </div>
                     <input type="submit" value="Enviar" class="btn btn_primary" id="enviar_correo">
                 </form>
                 <div class="datos-contacto">
+                    <h3>Contactame directamente:</h3>
                     <div class="dato">
                         <i class="fas fa-phone"></i>
                         <p>+54 1168772521</p>
