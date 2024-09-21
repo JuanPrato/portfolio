@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./main.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- MENU
+    PRESENTACION
+    INFORMACION GENERAL
+    CONOCIMIENTOS
+    PROYECTOS
+    REDES
+    FORMULARIO DE CONTACTO -->
+    <header class="header">
+      <h1>Juan Manuel Prato 💻</h1>
+      <nav class="header_nav">
+        <a href="#presentation" class="nav_link" data-ref-id="presentation"
+          >INICIO</a
+        >
+        <a href="#proyects" class="nav_link" data-ref-id="proyects"
+          >PROYECTOS</a
+        >
+        <a href="#aboutme" class="nav_link" data-ref-id="aboutme">SOBRE MI</a>
+        <a href="#contact" class="nav_link" data-ref-id="contact">CONTACTO</a>
+      </nav>
+    </header>
+    <div class="body_sections">
+      <section class="body_section presentation" id="presentation">
+        <!-- <h2>Presentación</h2> -->
+        <div class="presentation_box">
+          <img src="retrato.jpg" class="presentation_img" />
+          <div>
+            <header>
+              <h2 class="title">Desarrollador FULL STACK</h2>
+              <p class="paragraph">
+                5 años de experiencia en el rubro y listo para convertir tus
+                ideas en productos.
+              </p>
+            </header>
+            <div class="presentation_actions">
+              <a
+                class="icon-button"
+                href="https://github.com/JuanPrato"
+                target="_blank"
+              >
+                <img src="./icons/github-circle-svgrepo-com.svg" class="" />
+              </a>
+              <a
+                class="icon-button"
+                href="https://www.linkedin.com/in/juan-prato-213228199/"
+                target="_blank"
+              >
+                <img src="./icons/linkedin-svgrepo-com.svg" class="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="body_section proyects" id="proyects">
+        <div class="proyects_box">
+          <h2 class="title">Proyectos</h2>
+          <h5>Algunos de mis proyectos</h5>
+          <div class="projects_list"></div>
+        </div>
+      </section>
+      <section class="body_section about-me" id="aboutme">
+        <div class="aboutme-box">
+          <h2 class="title">Conoce un poco mi historia</h2>
+          <h5>Siempre creciendo</h5>
+          <button class="btn timeline-control timeline-control-left"><</button>
+          <button class="btn timeline-control timeline-control-right">></button>
+          <div class="aboutme_timeline box box-row items-center"></div>
+        </div>
+      </section>
+      <section class="body_section contact" id="contact">
+        <div class="contact_box box">
+          <header class="text-center">
+            <h2 class="title">Contacto</h2>
+            <h5>Envíame un mensaje</h5>
+          </header>
+          <form class="box contact_form">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Nombre"
+              class="input"
+              required
+            />
+            <textarea
+              name="question"
+              id="question"
+              placeholder="Mensaje"
+              class="input"
+              rows="5"
+              required
+            ></textarea>
+            <button class="btn box box-row items-center justify-center">
+              <img src="./icons/whatsapp.svg" class="icon" />
+              <span>Enviar mensaje</span>
+            </button>
+          </form>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
