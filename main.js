@@ -140,7 +140,7 @@ const timelineObserver = new IntersectionObserver(
 
       if (!index) return;
 
-      current = index;
+      current = Number(index);
     });
   },
   {
