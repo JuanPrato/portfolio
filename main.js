@@ -162,7 +162,11 @@ $prev.addEventListener("click", () => {
 
   if (!element) return;
 
-  element.scrollIntoView();
+  element.scrollIntoView({
+    behavior: "smooth",
+    block: "nearest",
+    inline: "center",
+  });
 });
 
 $next.addEventListener("click", () => {
@@ -172,7 +176,11 @@ $next.addEventListener("click", () => {
 
   if (!element) return;
 
-  element.scrollIntoView();
+  element.scrollIntoView({
+    behavior: "smooth",
+    block: "nearest",
+    inline: "center",
+  });
 });
 
 // CONTACTO
