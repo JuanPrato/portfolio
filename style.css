@@ -134,9 +134,12 @@ img {
 
 .badge {
   background-color: var(--foreground);
+  color: var(--primary-foreground);
   padding: 5px 10px;
+  margin: 3px;
   border-radius: 15px;
   font-size: small;
+  display: inline-block;
 }
 
 .input {
@@ -288,6 +291,33 @@ body {
 .project_card > main > footer {
   font-size: 12px;
 }
+
+/* KNOWLEDGE */
+
+.knowledge_list {
+  width: 500px;
+  margin-top: 15px;
+  border-collapse: collapse;
+}
+
+.knowledge_list > thead {
+  height: 40px;
+  border-bottom: 1px solid var(--foreground);
+}
+
+.knowledge_list > thead > tr > th:first-child {
+  width: 150px;
+}
+
+.knowledge_list > tbody {
+  text-align: left;
+}
+
+.knowledge_list > tbody > tr {
+  height: 60px;
+}
+
+/* ABOUTME */
 
 .about-me {
   background-color: rgb(167, 162, 96);

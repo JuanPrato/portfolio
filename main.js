@@ -60,6 +60,17 @@ const data = {
   contact: {
     number: "541111111111",
   },
+  knowledge: {
+    senior: ["Java"],
+    semiSenior: [
+      "NextJs",
+      "Angular2",
+      "Oracle - PL/SQL",
+      "GIT",
+      "Metodologías ágiles",
+    ],
+    junior: ["Mongo", "C#", "SQLServer"],
+  },
 };
 
 const $ = (selector) => document.querySelector(selector);
@@ -107,6 +118,22 @@ const projects = data.projects
   .join("");
 
 $projectsList.innerHTML = projects;
+
+// KNOWLEDGE
+
+function getBadge(skill) {
+  return `<li class="badge">${skill}</li>`;
+}
+
+const $seniorList = $("#senior-skills");
+const $semiSeniorList = $("#semi-senior-skills");
+const $juniorList = $("#junior-skills");
+
+$seniorList.innerHTML = data.knowledge.senior.map(getBadge).join("\n");
+
+$semiSeniorList.innerHTML = data.knowledge.semiSenior.map(getBadge).join("\n");
+
+$juniorList.innerHTML = data.knowledge.junior.map(getBadge).join("\n");
 
 // ABOUT ME
 
